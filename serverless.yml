@@ -1,0 +1,38 @@
+service: aws-node-rest-api-mongodb
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+
+functions:
+  addProduct:
+    handler: handler.createProduct
+    events:
+      - http:
+          path: addproduct
+          method: post
+          cors: true
+
+  updateUser:
+    handler: handler.updateUser
+    events:
+      - http:
+          path: user/{id}
+          method: put
+          cors: true
+
+  deleteUser:
+    handler: handler.deleteUser
+    events:
+      - http:
+          path: user/{id}
+          method: delete
+          cors: true
+
+  user:
+    handler: handler.user
+    events:
+      - http:
+          path: user/{id}
+          method: get
+          cors: true
