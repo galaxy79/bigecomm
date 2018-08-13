@@ -1,0 +1,14 @@
+{
+    "resource": "/product",
+    "path": "/product",
+    "httpMethod": "GET",
+    "headers": {
+        "Accept": "application/json"
+    },
+    "queryStringParameters": null,
+    "pathParameters": "Dhothi",
+    "stageVariables": null,
+    "requestContext": null,
+    "body": null,
+    "isBase64Encoded": false
+}

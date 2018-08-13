@@ -1,0 +1,16 @@
+{
+  "name": "Ekatva",
+  "version": "1.0.0",
+  "description": "Serverless REST API with MongoDB using Mongoose",
+  "main": "handler.js",
+  "dependencies": {
+    "mongoose": "5.2.6",
+    "validator": "10.5.0",
+    "mongoose-plugin-autoinc": "1.1.9"
+  },
+  "scripts": {
+    "predeploy": "zip -r Lambda-Deployment.zip * -x *.zip *.json *.log"
+  },
+  "author": "Govind",
+  "license": "MIT"
+}

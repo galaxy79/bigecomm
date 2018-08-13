@@ -1,0 +1,57 @@
+service: ekatvarestapi
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: ap-south-1
+
+functions:
+  addProduct:
+    handler: handler.createProduct
+    events:
+      - http:
+          path: addproduct
+          method: post
+          cors: true
+
+  updateUser:
+    handler: handler.updateUser
+    events:
+      - http:
+          path: user/{id}
+          method: put
+          cors: true
+
+  deleteUser:
+    handler: handler.deleteUser
+    events:
+      - http:
+          path: user/{id}
+          method: delete
+          cors: true
+
+  getProductbycategory:
+    handler: handler.getProductdetailsbycategory
+    events:
+      - http:
+          path: product/{category}
+          method: get
+          cors: true
+
+  getProductbysku:
+    handler: handler.getProductbyskudetails
+    events:
+      - http:
+          path: product/{sku}
+          method: get
+          cors: true
+
+  getProductbydept:
+    handler: handler.getProductbyskudept
+    events:
+      - http:
+          path: product/{dept}
+          method: get
+          cors: true
+

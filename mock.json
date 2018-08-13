@@ -1,0 +1,56 @@
+{
+    "resource": "/addproduct",
+    "path": "/addproduct",
+    "httpMethod": "POST",
+    "headers": {
+        "Accept": "application/json"
+    },
+    "queryStringParameters": null,
+    "pathParameters": null,
+    "stageVariables": null,
+    "requestContext": null,
+    "body": {
+        "productcategory": "Dhothi",
+        "department": "Men",
+        "producttitle": "Gold Men Dhothi",
+        "productseller": "Ekatva",
+        "productquantity": "3",
+        "sizemap": [{
+            "size": "Small"
+        }],
+        "colormap": [{
+            "color": "White"
+        }],
+        "productdescription": [{
+                "feature": "Kalamari Saree with thick work"
+            },
+            {
+                "feature": "Golden color and with saree"
+            },
+            {
+                "feature": "this is for saree for testing"
+            },
+            {
+                "feature": "this is for dhothi for testing"
+            }
+        ],
+        "productimages": [{
+                "imagepath": "//res.cloudinary.com/ddglp4e0g/image/upload/v1532873693/ekatva/mainimage.jpg"
+            },
+            {
+                "imagepath": "//res.cloudinary.com/ddglp4e0g/image/upload/v1532873693/ekatva/mainimage1.jpg"
+            },
+            {
+                "imagepath": "//res.cloudinary.com/ddglp4e0g/image/upload/v1532873693/ekatva/mainimage2.jpg"
+            },
+            {
+                "imagepath": "//res.cloudinary.com/ddglp4e0g/image/upload/v1532873693/ekatva/mainimage3.jpg"
+            }
+        ],
+        "price": {
+            "marketprice": "1200",
+            "saleprice": "800"
+        }
+    },
+    "isBase64Encoded": false
+}

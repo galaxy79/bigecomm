@@ -1,0 +1,30 @@
+{
+    "productcategory":"Saree",
+    "producttitle":"Kerala Saree with karingali desgin",
+    "sku":"ABU-12TH-ER45",
+    "productseller":"Ekatva",
+    "productquantity":"1",
+    "productdescription":[
+        {
+            "feature": "Length 20m, breadth 12m"
+        },
+        {
+            "feature": "Pure White color"
+        },
+        {
+            "feature": "this is for testing"
+        }
+    ],
+    "productimages":
+    [
+        {
+            "imagepath":"//res.cloudinary.com/ddglp4e0g/image/upload/v1532873693/ekatva/mainimage.jpg"
+        }
+    ],
+    "price":
+    {
+        "marketprice":"1250",
+        "saleprice":"1000"
+
+    }
+}
